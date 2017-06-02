@@ -8,3 +8,4 @@
 - 封装查询字符串转成对象方法
 - jsonp原理
 - Promise基本实现原理
+- EventEmitter实现原理
