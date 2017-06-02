@@ -10,3 +10,10 @@ String.prototype.queryParamers = function() {
 }
 let res = address.queryParamers();
 console.log(res);
+
+// node中queryString模块
+let querystring = require('querystring');
+let str = 'name=maxin&age=23';
+console.log(querystring.parse(str));
+let obj = querystring.parse(str);
+console.log(querystring.stringify(obj));
