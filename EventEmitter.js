@@ -15,11 +15,8 @@ Girl.prototype.on = function (eventName, callback) {
     }
 };
 
-// 通过发射的事件名 将数组里的每一项执行
+// 触发事件
 Girl.prototype.emit = function (eventName, ...others) {
-    // 1. [].slice.call(arguments, 1);
-    // 2. Array.from(arguments).slice(1)
-    // 3. (eventName, ...others)
     if (this._events[eventName]) {
         this._events[eventName].forEach((callback) => {
             callback.apply(this, others);   // 这里的this是上一级的this
@@ -51,4 +48,4 @@ girl.on('变漂亮', eat);
 girl.on('变漂亮', cry);
 girl.removeListener('变漂亮', cry);
 
-girl.emit('变漂亮', '我');
+girl.emit('变漂亮', '女神');
