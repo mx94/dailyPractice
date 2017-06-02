@@ -1,4 +1,5 @@
-let url = "www.baidu.com/s?wd=hh&kw=xx";
+// String原型上扩展
+let address = "www.baidu.com/s?wd=hh&kw=xx";
 String.prototype.queryParamers = function() {
     let obj = {};
     let reg = /([^?=&]+)=([^?=&]+)/g;
@@ -7,5 +8,5 @@ String.prototype.queryParamers = function() {
     });
     return obj;
 }
-let res = url.queryParamers();
+let res = address.queryParamers();
 console.log(res);
