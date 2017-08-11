@@ -1,0 +1,567 @@
+{
+    "id": "56e38bb48f7d13000b85373a",
+    "title": "斯图加特慢动作",
+    "subtitle": "一些静态和动态的慢动作\n屋顶俯瞰整个城市，时间静止和跳跃之间",
+    "story": {
+        "layout": {
+            "cols": 6
+        },
+        "cover": {
+            "content": {
+                "id": "56e38bb48f7d13000b853715",
+                "type": "video",
+                "bodyFile": {
+                    "id": "56e38bb48f7d13000b853716",
+                    "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_2167f251f1f84f3cbc776ca36a35b50d"
+                },
+                "coverFile": {
+                    "id": "56e38bb48f7d13000b853717",
+                    "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_846fb6869baf4f0d86f5d77efa3de6d5"
+                }
+            },
+            "picArea": {
+                "startLoc": {
+                    "xPct": 0,
+                    "yPct": 0
+                },
+                "endLoc": {
+                    "xPct": 100,
+                    "yPct": 100
+                }
+            }
+        },
+        "shots": [
+            {
+                "order": 1,
+                "content": {
+                    "id": "56e38bb48f7d13000b853718",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853719",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_f2de62236d7849d68448956c8809aa20"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 0
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 2,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371a",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85371b",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_6e28ae147f1a46fda3180625cdfb3516"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 4
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 3,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371c",
+                    "type": "video",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85371d",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_24f83e017f2142ee9f9f6b6516b70778"
+                    },
+                    "coverFile": {
+                        "id": "56e38bb48f7d13000b85371e",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_8c6cd95374c74a1da16486f67e784994"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 8
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 4,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371f",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853720",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_2726dedcb0fd4c88b3c8391243364d47"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 12
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 5,
+                "content": {
+                    "id": "56e38bb48f7d13000b853721",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853722",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_fb50adc1ca5948d0a30f199d1a2a6a6d"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 16
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 6,
+                "content": {
+                    "id": "56e38bb48f7d13000b853723",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853724",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_9662636570ba4ebcacb71e07ca8951ad"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 20
+                },
+                "size": {
+                    "colSpan": 2,
+                    "rowSpan": 3
+                }
+            },
+            {
+                "order": 7,
+                "content": {
+                    "id": "56e38bb48f7d13000b853725",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853726",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_074b825295dd4597acfa8412d90fd2f8"
+                    }
+                },
+                "position": {
+                    "colIndex": 2,
+                    "rowIndex": 20
+                },
+                "size": {
+                    "colSpan": 4,
+                    "rowSpan": 3
+                }
+            },
+            {
+                "order": 8,
+                "content": {
+                    "id": "56e38bb48f7d13000b853727",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853728",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_e3a279a39de5471c9a0e09b963d5944e"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 23
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 6
+                }
+            },
+            {
+                "order": 9,
+                "content": {
+                    "id": "56e38bb48f7d13000b853729",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372a",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_9869ea2345794e79baee8ef714560bf0"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 29
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 3
+                }
+            },
+            {
+                "order": 10,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372b",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372c",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_55b22c87385040da8788ead2183210da"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 32
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 2
+                }
+            },
+            {
+                "order": 11,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372d",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372e",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_897c7d5fce704e919519cc8b074e7091"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 34
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 12,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372f",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853730",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_2fe29eb858334c6aa6a1f06c823eecbd"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 38
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 3
+                }
+            },
+            {
+                "order": 13,
+                "content": {
+                    "id": "56e38bb48f7d13000b853731",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853732",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_c3a76a0a413242ea9604c57002c61e3f"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 41
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 3
+                }
+            },
+            {
+                "order": 14,
+                "content": {
+                    "id": "56e38bb48f7d13000b853733",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853734",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_60e706308d444fefabe966edfc62e7ee"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 44
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 15,
+                "content": {
+                    "id": "56e38bb48f7d13000b853735",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853736",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_282f63ccb73241268bec8f9f9ef428ef"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 48
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            },
+            {
+                "order": 16,
+                "content": {
+                    "id": "56e38bb48f7d13000b853737",
+                    "type": "video",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853738",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_9a8d6a3312c0479999af124e6de7f5dc"
+                    },
+                    "coverFile": {
+                        "id": "56e38bb48f7d13000b853739",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_f0636b0242f5446cb028e5125a767de7"
+                    }
+                },
+                "position": {
+                    "colIndex": 0,
+                    "rowIndex": 52
+                },
+                "size": {
+                    "colSpan": 6,
+                    "rowSpan": 4
+                }
+            }
+        ]
+    },
+    "presentation": {
+        "browseMode": "horizontal",
+        "slides": [
+            {
+                "order": 0,
+                "content": {
+                    "id": "56e38bb48f7d13000b853715",
+                    "type": "video",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853716",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_2167f251f1f84f3cbc776ca36a35b50d"
+                    },
+                    "coverFile": {
+                        "id": "56e38bb48f7d13000b853717",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_846fb6869baf4f0d86f5d77efa3de6d5"
+                    }
+                }
+            },
+            {
+                "order": 1,
+                "content": {
+                    "id": "56e38bb48f7d13000b853718",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853719",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_f2de62236d7849d68448956c8809aa20"
+                    }
+                }
+            },
+            {
+                "order": 2,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371a",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85371b",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_6e28ae147f1a46fda3180625cdfb3516"
+                    }
+                }
+            },
+            {
+                "order": 3,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371c",
+                    "type": "video",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85371d",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_24f83e017f2142ee9f9f6b6516b70778"
+                    },
+                    "coverFile": {
+                        "id": "56e38bb48f7d13000b85371e",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_8c6cd95374c74a1da16486f67e784994"
+                    }
+                }
+            },
+            {
+                "order": 4,
+                "content": {
+                    "id": "56e38bb48f7d13000b85371f",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853720",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_2726dedcb0fd4c88b3c8391243364d47"
+                    }
+                }
+            },
+            {
+                "order": 5,
+                "content": {
+                    "id": "56e38bb48f7d13000b853721",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853722",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_fb50adc1ca5948d0a30f199d1a2a6a6d"
+                    }
+                }
+            },
+            {
+                "order": 6,
+                "content": {
+                    "id": "56e38bb48f7d13000b853723",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853724",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_9662636570ba4ebcacb71e07ca8951ad"
+                    }
+                }
+            },
+            {
+                "order": 7,
+                "content": {
+                    "id": "56e38bb48f7d13000b853725",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853726",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_074b825295dd4597acfa8412d90fd2f8"
+                    }
+                }
+            },
+            {
+                "order": 8,
+                "content": {
+                    "id": "56e38bb48f7d13000b853727",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853728",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_e3a279a39de5471c9a0e09b963d5944e"
+                    }
+                }
+            },
+            {
+                "order": 9,
+                "content": {
+                    "id": "56e38bb48f7d13000b853729",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372a",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_9869ea2345794e79baee8ef714560bf0"
+                    }
+                }
+            },
+            {
+                "order": 10,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372b",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372c",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_55b22c87385040da8788ead2183210da"
+                    }
+                }
+            },
+            {
+                "order": 11,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372d",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b85372e",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_897c7d5fce704e919519cc8b074e7091"
+                    }
+                }
+            },
+            {
+                "order": 12,
+                "content": {
+                    "id": "56e38bb48f7d13000b85372f",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853730",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_2fe29eb858334c6aa6a1f06c823eecbd"
+                    }
+                }
+            },
+            {
+                "order": 13,
+                "content": {
+                    "id": "56e38bb48f7d13000b853731",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853732",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_c3a76a0a413242ea9604c57002c61e3f"
+                    }
+                }
+            },
+            {
+                "order": 14,
+                "content": {
+                    "id": "56e38bb48f7d13000b853733",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853734",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_60e706308d444fefabe966edfc62e7ee"
+                    }
+                }
+            },
+            {
+                "order": 15,
+                "content": {
+                    "id": "56e38bb48f7d13000b853735",
+                    "type": "image",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853736",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_282f63ccb73241268bec8f9f9ef428ef"
+                    }
+                }
+            },
+            {
+                "order": 16,
+                "content": {
+                    "id": "56e38bb48f7d13000b853737",
+                    "type": "video",
+                    "bodyFile": {
+                        "id": "56e38bb48f7d13000b853738",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_vid_9a8d6a3312c0479999af124e6de7f5dc"
+                    },
+                    "coverFile": {
+                        "id": "56e38bb48f7d13000b853739",
+                        "url": "http://7xlro1.com2.z0.glb.qiniucdn.com/wk_img_f0636b0242f5446cb028e5125a767de7"
+                    }
+                }
+            }
+        ]
+    },
+    "author": {
+        "id": "55f64084897011000bec23a6",
+        "nickname": "K宝",
+        "commonAvatarUrl": "http://7xlro1.com2.z0.glb.qiniucdn.com/9933dadfab21469bb5374c3c9f04cb2b/av90x",
+        "maxAvatarUrl": "http://7xlro1.com2.z0.glb.qiniucdn.com/9933dadfab21469bb5374c3c9f04cb2b/av300x",
+        "group": "professional"
+    },
+    "isLiked": false,
+    "isFavored": false,
+    "stats": {
+        "viewTimes": 0,
+        "likeTimes": 1431,
+        "favoriteTimes": 0,
+        "commentTimes": 0
+    }
+}

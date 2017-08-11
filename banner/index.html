@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        #container {
+            position: relative;
+            width: 800px;
+            height: 350px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: absolute;
+            height: 100%;
+            /*width: 2400px;*/
+        }
+
+        .slider li {
+            float: left;
+            width: 800px;
+            height: 350px;
+        }
+
+        .slider li a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider li a img {
+            width: 100%;
+            height: 100%;
+            border: none;
+            vertical-align: top;
+        }
+
+        .btn-change {
+            position: absolute;
+            width: 40px;
+            height: 80px;
+            text-align: center;
+            line-height: 80px;
+            color: #f3f4f5;
+            background-color: rgba(0, 0, 0, .45);
+            top: 50%;
+            margin-top: -40px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .btn-change:hover {
+            color: #fff;
+            background-color: rgba(0, 0, 0, .7);
+        }
+
+        .btn-change.prev {
+            left: 0;
+        }
+
+        .btn-change.next {
+            right: 0;
+        }
+
+        .dots {
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            left: 50%;
+            bottom: 20px;
+            margin: auto;
+            padding: 2px 10px;
+            background-color: rgba(0, 0, 0, .5);
+            border-radius: 12px;
+        }
+
+        .dots span {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 4px;
+        }
+
+        .dots span.active {
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+
+</div>
+</body>
+</html>
+<script src="../DOM库.js"></script>
+<script src="animate.js"></script>
+<script>
+    var container = document.getElementById('container');
+    function Banner(opts) {
+        this.url = opts.url;
+        this.container = opts.container;
+        this.data = null;
+        this.width = opts.width;
+        this.index = 0;
+        this.timer = null;
+        this.interval = opts.interval || 3000;
+        this.init();
+    }
+    Banner.prototype.getData = function () {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', this.url + '?' + Math.random(), true);
+        var _this = this;
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                _this.data = JSON.parse(this.responseText);
+                _this.bindData(_this.data);
+            }
+        }
+        xhr.send(null);
+    }
+    Banner.prototype.bindData = function (data) {
+        var _this = this;
+        if (data && data.length) {
+            var frg = document.createDocumentFragment();
+            var slider = document.createElement('ul');
+            slider.className = 'slider';
+            slider.id = 'slider';
+            slider.style.width = (data.length + 1) * this.width + 'px';
+            for (var i = 0; i < data.length; i++) {
+                var cur = data[i];
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = cur.link;
+                var img = document.createElement('img');
+                img.src = cur['image'];
+                img.alt = cur['comment'];
+                a.appendChild(img);
+                li.appendChild(a);
+                slider.appendChild(li)
+            }
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = data[0].link;
+            var img = document.createElement('img');
+            img.src = data[0]['image'];
+            img.alt = data[0]['comment'];
+            a.appendChild(img);
+            li.appendChild(a);
+            slider.appendChild(li);
+            frg.appendChild(slider);
+            var prev = document.createElement('span');
+            prev.className = 'btn-change prev';
+            prev.innerHTML = '&lt;';
+            frg.appendChild(prev);
+            var next = document.createElement('span');
+            next.className = 'btn-change next';
+            next.innerHTML = '&gt;';
+            frg.appendChild(next);
+            var dots = document.createElement('div');
+            dots.className = 'dots';
+            dots.style.marginLeft = '-' + ((data.length * 14 + 20) / 2) + 'px';
+            for (var i = 0; i < data.length; i++) {
+                if (i === 0) {
+                    var dot = document.createElement('span');
+                    dot.className = 'active';
+                    dots.appendChild(dot);
+                } else {
+                    var dot = document.createElement('span');
+                    dots.appendChild(dot);
+                }
+            }
+            frg.appendChild(dots);
+            this.container.appendChild(frg);
+            frg = null;
+            this.timer = setInterval(function () {
+                _this.autoMove.call(_this);
+            }, this.interval * 1000)
+        }
+    }
+
+    Banner.prototype.autoMove = function () {
+        this.index++;
+        this.setImg.call(this);
+    }
+
+    Banner.prototype.setImg = function () {
+        var _this = this;
+        var slider = document.getElementById('slider');
+        if (_this.index == _this.data.length + 1) {
+            slider.style.left = 0;
+            _this.index = 1;
+        }
+        animate({
+            ele: slider,
+            target: {
+                left: '-' + _this.index * _this.width
+            },
+            duration: 500
+        });
+    }
+
+    Banner.prototype.bindEvent = function () {
+        var _this = this;
+        this.container.onmouseover = function () {
+            window.clearInterval(_this.timer);
+        }
+        this.container.onmouseout = function () {
+            _this.autoMove();
+        }
+    }
+
+    Banner.prototype.init = function () {
+        this.getData();
+    }
+
+    new Banner({
+        url: 'data.json',
+        container: container,
+        width: 800,
+        interval: 2
+    })
+</script>

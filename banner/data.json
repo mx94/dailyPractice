@@ -1,0 +1,17 @@
+[
+    {
+        "comment": "新闻图片1",
+        "image": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=821256058,1167029971&fm=26&gp=0.jpg",
+        "link": "javascript:;"
+    },
+    {
+        "comment": "新闻图片2",
+        "image": "https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4122330778,3732315151&fm=26&gp=0.jpg",
+        "link": "javascript:;"
+    },
+    {
+        "comment": "新闻图片3",
+        "image": "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2090745805,1527321634&fm=26&gp=0.jpg",
+        "link": "javascript:;"
+    }
+]

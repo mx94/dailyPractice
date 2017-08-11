@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图片预加载</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        html, body, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .load {
+            height: 5px;
+            font-size: 12px;
+            background: #109874;
+            text-align: center;
+            color: #ddd;
+            width: 0;
+            margin-bottom: 10px;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+
+        img {
+            display: block;
+            margin-bottom: 10px;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+<div id="load" class="load"></div>
+
+<script>
+    function Loading() {
+        this.init.apply(this, arguments)
+    }
+
+    Loading.prototype.init = function (id, aImg, handler) {
+        var oCon = document.getElementById(id),
+            aData = [],
+            iImgCount = 0,
+            iLoaded = 0;
+        if (!oCon) {
+            return;
+        }
+        for (var i = 0, iImgCount = aImg.length; i < iImgCount; i++) {
+            (function (i) {
+                var oImg = new Image();
+                oImg.onload = function () {
+                    oCon.style.width = Math.ceil(++iLoaded / iImgCount * 100) + "%";
+                    this.onload = null;
+                    var aTmp = document.createElement("img");
+                    aTmp.src = this.src;
+                    aData.push(aTmp);
+                    if (aData[i] && aData.length == iImgCount) {
+                        handler(aData);
+                    }
+                }
+                oImg.src = aImg[i];
+            })(i);
+        }
+    }
+
+    var aImg = [];
+    fetch('play+.json')
+        .then(res => res.json())
+        .then(data => {
+            var itemArr = data.story.shots;
+            var imgArr = itemArr.filter(item => item.content.type != 'video');
+            imgArr.forEach(item => aImg.push(item.content.bodyFile.url))
+        })
+        .then(() => {
+            new Loading("load", aImg, function (aImg) {
+                var frag = document.createDocumentFragment()
+                for (var i = 0; i < aImg.length; i++) {
+                    frag.appendChild(aImg[i])
+                }
+                document.body.appendChild(frag);
+            });
+        })
+        .catch(e => console.log(e));
+</script>
+</body>
+</html>
