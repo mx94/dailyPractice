@@ -10,3 +10,4 @@
 - Promise基本实现原理
 - EventEmitter实现原理
 - 封装一个Promise版的jsonp方法
+- 把setState变成同步更新的方法
